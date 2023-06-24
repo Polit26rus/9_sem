@@ -26,6 +26,28 @@ int Prompt(string text)
 //     }
 // }
 
+// 68
+void AkkermanFunction(int m, int n)
+{
+    Console.Write(Akkerman(m, n)); 
+}
+
+
+int Akkerman(int m, int n)
+{
+    if (m == 0)
+    {
+        return n + 1;
+    }
+    else if (n == 0 && m > 0)
+    {
+        return Akkerman(m - 1, 1);
+    }
+    else
+    {
+        return (Akkerman(m - 1, Akkerman(m, n - 1)));
+    }
+}
 
 
 int n = Prompt("Введите n ");
@@ -36,3 +58,7 @@ int n = Prompt("Введите n ");
 // 66
 // int m = Prompt("Введите m ");
 // Console.WriteLine(SumOfNum(n,m));
+
+// 68
+// int m = Prompt("Введите m ");
+// AkkermanFunction(m,n);
