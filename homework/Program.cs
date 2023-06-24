@@ -15,8 +15,24 @@ int Prompt(string text)
 //     return finish + " " + PrintNumbers(finish - 1); 
 // }
 
+// 66
+// int SumOfNum(int m,int n){
+
+//     if(n == m){
+//         return n;
+//     }
+//     else{
+//         return m + SumOfNum(m + 1,n);
+//     }
+// }
+
+
 
 int n = Prompt("Введите n ");
 
 // 64
 // Console.WriteLine(PrintNumbers(n));
+
+// 66
+// int m = Prompt("Введите m ");
+// Console.WriteLine(SumOfNum(n,m));
